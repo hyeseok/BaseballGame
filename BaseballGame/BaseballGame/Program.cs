@@ -32,8 +32,8 @@ namespace BaseballGame
             while (index < 3)
             {
                 numbers[index] = random.Next(1, 10); // 1~10까지의 숫자를 랜덤하게 배열에 담는다.
+                bool hasDuplicate = false; // 랜덤으로 입력된 숫자를 확인하기 위한 불린 변수
 
-                bool hasDuplicate = false;
                 for (int i = 0; i < index; i++)
                 {
                     if (numbers[index] == numbers[i])
@@ -56,7 +56,6 @@ namespace BaseballGame
                     for (int i = 0; i < 3; i++)
                     {
                         Console.WriteLine(inputMessages[i]);
-                        Console.WriteLine("반드시 숫자를 입력하세요!");
                         guesses[i] = int.Parse(Console.ReadLine());
                     }
 
