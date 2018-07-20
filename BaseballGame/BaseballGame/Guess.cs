@@ -8,6 +8,7 @@ namespace BaseballGame
 {
     class Guess : NumberContainer
     {
+
         protected override string GetShowText()
         {
             return "> 공격수가 고른 숫자";
@@ -46,6 +47,10 @@ namespace BaseballGame
             }
         }
 
+        internal string ToText()
+        {
+            return "";
+        }
 
         public bool IsInvalid()
         {

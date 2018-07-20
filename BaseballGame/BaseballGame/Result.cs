@@ -17,6 +17,11 @@ namespace BaseballGame
             return Strike == 3;
         }
 
+        internal string ToText()
+        {
+            return "";
+        }
+
         public void Calculate(Answer answer, Guess guess)
         {
 

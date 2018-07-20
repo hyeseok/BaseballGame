@@ -19,6 +19,8 @@ namespace BaseballGame
 
             Guess guess = new Guess();
 
+            List<HistoryItem> historyItems = new List<HistoryItem>();
+
             while (true)
             {
                 answer.Show();
@@ -43,6 +45,11 @@ namespace BaseballGame
                 // 결과를 출력한다.
                 result.Show();
 
+                // 히스토리 출력
+                HistoryItem item = new HistoryItem();
+                item.Result = 
+                    item.Guess = 
+                        historyItems.Add(item);
 
                 // 정답이면 게임을 끝낸다.
                 if (result.IsFinished())
